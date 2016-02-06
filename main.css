@@ -1,0 +1,89 @@
+.octodex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.octocat {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+}
+
+.octocat img {
+  width: 438px;
+  height: 438px;
+  border: 1px solid #CACACA;
+  border-radius: 5px;
+}
+
+.image-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #CACACA;
+  color: #CACACA;
+  font-weight: bold;
+  width: 438px;
+}
+
+.image-number::before {
+  content: "#";
+}
+
+.image-number {
+  align-content: flex-start;
+}
+
+.image-caption {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 408px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.authors img {
+  height: 28px;
+  width: 28px;
+  border: none;
+  border-radius: 4px;
+}
+
+.image-caption a {
+  color: #333333;
+  font-weight: bold;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.image-caption span {
+  color: #777777;
+}
+
+/*triangle
+
+.image-footer:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 9px 0 9px;
+  border-color: #CACACA transparent transparent transparent;
+  position: absolute;
+}
+
+*/
+
+/*hard mode*/
+
+@media screen and (min-width: 768px) {
+    .octodex {
+        flex-direction: row;
+    }
+}
